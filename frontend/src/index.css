@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FAF8F5;
+    --card-cream: #FFFDF9;
+    --border-cream: #EFE9E0;
+    
+    --lavender-50: #F3F0FF;
+    --lavender-100: #EAE4FF;
+    --lavender-200: #D9D0FF;
+    --lavender-500: #7C65C1;
+    --lavender-700: #554194;
+    
+    --sage-50: #F1F5F0;
+    --sage-100: #E2ECE0;
+    --sage-200: #C7DBC4;
+    --sage-600: #5D725A;
+    --sage-800: #3D4C3A;
+
+    --text-primary: #2C3531;
+    --text-secondary: #5C6762;
+    --text-muted: #8E9994;
+  }
+
+  body {
+    background-color: var(--bg-cream);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+  }
+}
+
+.bg-cream-base { background-color: #FAF8F5; }
+.bg-cream-card { background-color: #FFFDF9; }
+.border-cream { border-color: #EFE9E0; }
+
+.bg-lavender-soft { background-color: #F3F0FF; }
+.bg-lavender-accent { background-color: #7C65C1; }
+.text-lavender-accent { color: #684FA9; }
+.border-lavender { border-color: #D9D0FF; }
+
+.bg-sage-soft { background-color: #F1F5F0; }
+.bg-sage-accent { background-color: #5D725A; }
+.text-sage-accent { color: #4A5C47; }
+.border-sage { border-color: #C7DBC4; }
+
+.glass-panel {
+  background: rgba(255, 253, 249, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(239, 233, 224, 0.8);
+}
+
+.shadow-pastel {
+  box-shadow: 0 4px 20px -2px rgba(124, 101, 193, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-pastel-lg {
+  box-shadow: 0 10px 30px -4px rgba(124, 101, 193, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D0FF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7C65C1;
+}
