@@ -1,0 +1,26 @@
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/package-lock.json
+
+# Python / Backend
+backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+backend/*.db
+*.db
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+ENV/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
